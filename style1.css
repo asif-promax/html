@@ -1,0 +1,19 @@
+.t1 table,td,th{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+.t1 table,.table3{
+    width: 100%;
+    
+}
+.table2,th,td,.table3{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table2{
+    width: 100%;
+}
+td{
+    height: 20px;
+}

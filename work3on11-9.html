@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px outset;
+        }
+        th,td{
+            padding: 5px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2", colspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8am</td>
+            <td rowspan="2">5pm</td>
+            <td colspan="2">Introduction to XML</td>
+        </tr>
+        <tr>
+            <td colspan="2"> Validity</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8am</td>
+            <td>11am</td>
+            <td colspan="2" style="height: 10px;">Xpath</td>
+        </tr>
+        <tr>
+            <td>11am</td>
+            <td>2pm</td>
+        </tr>
+        <tr>
+            <td>2pm</td>
+            <td>5pm</td>
+            <td>XSL transformstion</td>
+        </tr>
+        <tr>
+            <td>wednesday</td>
+            <td>8am</td>
+            <td>12pm</td>
+            <td>XSL formating object</td>
+        </tr>
+    </table>
+</body>
+</html>
