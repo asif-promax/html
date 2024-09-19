@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            box-shadow: 5px 10px 5px 5px rgb(139, 135, 135) ;
+            background-color: rgb(41, 41, 90);
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 100px;
+        }
+        td{
+                border: 1px solid black;
+                padding: 15px;
+        }
+        td{
+            text-align: center;
+            background-color: rgb(160, 76, 76);
+            border-radius: 5px;
+           
+        }
+        button{
+            padding: 0%;
+            border-width: 0px;
+            color: white;
+            background-color: rgb(160, 76, 76);
+        }
+        input{
+            background-color: transparent;
+            border: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="4" style="border-style: inset;"><input type="number"></td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(160, 76, 76);"><button>c</button></td>
+                <td style="background-color :rgb(160, 76, 76) ;"><button><-</button></td>
+                <td><button>/</button></td>
+                <td><button>*</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>-</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td rowspan="2"><button>+</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td colspan="3"><button>=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
