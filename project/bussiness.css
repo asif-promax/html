@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(25, 6, 199);
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    color: white;
+}
+.navmenu{
+    display: flex;
+    padding-left: 80px;
+}
+.navmenu h5{
+    padding: 10px 20px;
+}
+.bussiness{
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+.bussiness svg{
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+    color: #cac4ee;
+}
+.firstpage{
+    display: flex;
+    background-color: rgb(25, 6, 199);
+    justify-content: left;
+    height: 551px;
+}
+.left{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 160px 20px 0px 50px;
+}
+.pitcher img{
+    margin: 100px 0px 0px 220px;
+    width: 450px;
+    height: 350px;
+}
+.left h1{
+    text-transform: capitalize;
+    word-spacing: 10px;
+}
+.left p{
+    font-size: 12px;
+    padding: 30px 0px;
+    line-height: 15px;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    word-spacing: 5px;
+}
+.started{
+    background-color: white;
+    padding: 12px 5px;
+    border-radius: 3px;
+    color: rgb(25, 6, 199);
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 12px;
+}
+.watch{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+.link{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.svg svg{
+    width: 30px;
+    height: 30px;
+}
+.secondpage{
+    display: flex;
+    align-items: center;
+
+}
+.img{
+   width: 50%;
+}
+.right{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 45%;
+}
+.img img{
+    width: 550px; 
+    height: 340px;
+    margin: 50px 80px;
+}
+.right h4{
+    font-size: 13px;
+}
+span{
+    color: rgb(110, 13, 201);
+}
+.button{
+    background-color: #cac4ee;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px 10px;
+    border-radius: 4px;
+}
+.button button{
+    border: #cac4ee;
+    padding: 5px 10px;
+}

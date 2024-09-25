@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(30, 53, 40);
+}
+.start{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.main21,.main22{
+    display: flex;
+    gap: 15px;
+}
+img{
+    border-radius:50%;
+    border: 3px solid red;
+    width: 50px;
+    height: 50px;
+}
+.clm11{
+    background-color: rgb(126, 74, 175);
+    border-radius: 5px;
+    padding: 20px 40px 40px 15px;
+    color: white;
+    position: relative;
+}
+.clm1{
+    position: relative;
+}
+.clm11 p{
+    font-size: 8px;
+
+}
+.clm11 h2{
+    margin-top:0 ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.clm12{
+    background-color: rgb(24, 24, 29);
+    padding: 4px 5.51px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 182px;
+    width: 122px;
+    z-index: -1;
+}
+.clm12 p{
+    margin: 10px 0 10px 0;
+    padding:0 0 3px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: rgb(115, 124, 123);
+}
+.main21{
+    
+}
+.just{
+    display: flex;
+    justify-content:space-between;
+} 
+.just p{
+    margin: 0px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.clmi{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    color: white;
+}
+.clmi h2{
+    margin: 10px;
+}
+.just p{
+    font-size: 10px;
+    padding:10px 20px 10px 10px;
+}
+.clmii{
+    border-radius: 5px;
+    background-color: rgb(24, 24, 29);
+    width: 122px;
+}
+.icon{
+    border-radius: 5px;
+    width: 122px;
+    height: 70px;
+    overflow: hidden;
+}
+.main21{
+    padding-bottom: 15px;
+}
+.main21 .clmi{
+    position: relative;
+}
+.main21 .icon{
+    position: absolute;
+}
+.main21 .clmii{
+    position: relative;
+    top: 30px;
+
+}
+.main22{
+    margin-top: 25px;
+}
+.main22 .clmi{
+    position: relative;
+}
+.main22 .icon{
+    position: absolute;
+}
+.main22 .clmii{
+    position: relative;
+    top: 30px;
+}
+ .main21 svg{
+    opacity: 0.3;
+    rotate:45deg;
+    height: 35px;
+    width: 35px;
+    margin-left: 85px;
+}
+.main22 svg{
+    opacity: 0.2;
+    rotate:90deg;
+    height: 35px;
+    width: 35px;
+    margin-left: 85px;
+}
+.p{
+    color: gray;
+    padding:10px 20px 10px 10px;
+    font-size: 9px;
+}
