@@ -1,0 +1,9 @@
+
+.class2{
+    position:relative;
+    bottom: 100px;
+}
+.class2 img{
+    max-width: 90%;
+    margin: auto;
+}

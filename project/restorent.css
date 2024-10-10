@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.firstnnav{
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(/bg-hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:rgb(54, 49, 70) ;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 2%;
+}
+.icon img{
+    width: 47px;
+    height: 57px;
+    margin-bottom: 15px;
+    position: absolute;
+    left: 0;
+}
+.navmenu{
+    margin-right: 2%;
+}
+.icon h1{
+    font-size: 40px;
+    color: rgb(255, 145, 0);
+    padding-left: 39px;
+}
+.navmenu ul{
+    display: flex;
+    list-style-type: none;
+}
+.navmenu li{
+    padding:10px 12px;
+    color: white;
+}
+.book{
+    background-color: orange;
+}
+.dropdown{
+    position: relative;
+}
+.dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: rgb(207, 205, 205);
+    
+}
+.dropdowncontent a{
+    padding: 12px 16px;
+    display: block;
+    color: black;
+}
+.dropdowncontent a:hover{
+    background-color: rgb(177, 175, 175);
+}
+.navmenu li:hover:not(.home){
+    color: orangered;
+    transition: 1s;
+}
+.dropdown:hover .dropdowncontent{
+    display: block;
+}
+.menuicon{
+    position: relative;
+    color: rgb(131, 131, 131);
+    display: none;
+    margin-right: 2%;
+}
+.menuicon button{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(131, 131, 131);
+}
+.menuicon svg{
+    width: 100%;
+    height: 100%;
+    color: rgb(131, 131, 131);
+    
+}
+.dropdowncontent1{
+    display: none;
+    position: relative;
+    width: ;
+    right: ;
+}
+.dropdowncontent1 a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(5, 4, 49);
+    color: white;
+}
+.menuicon:hover{
+    border: 3px solid rgb(131, 131, 131);
+}
+.menuicon:hover .dropdowncontent1{
+    display: block;
+}
+.firstpage{
+
+    top: 0px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    width: 45%;
+    color: white;
+    position: relative;
+    animation: first 1s;
+}
+.left h1{
+    font-size: 60px;
+    padding: 10px 0px;
+    
+}
+.left p{
+    padding: 0px 0 25px 0;
+}
+.left a{
+    background-color: orange;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+@keyframes first {
+    0%{left: -100px;top: 0px;}
+    100%{left: 0px;top: 0px;}
+}
+.pic1{
+    width: 45%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.pic1 img{
+    max-width: 80%;
+    animation: anime 10s linear  infinite;
+    border-radius: 50%;
+
+}
+@keyframes anime {
+    100%{transform: rotate(360deg);}
+}
+.secondpage{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line1 , .line2{
+    display: flex;
+}
+.ss{
+    box-shadow: 0px 0px 8px .1px rgb(230, 227, 227);
+    width: 150px;
+    height: 150px;
+    padding: 15px 20px ;
+    margin: 0 25px;
+    position: relative;
+    animation: second 1s;
+}
+@keyframes second {
+    0%{bottom: -100px;}
+    100%{bottom: 0px;}
+}
+.secondpage .ss svg{
+    width: 45px;
+    height: auto;
+    color: orangered;
+}
+.thirdpage{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.left1{
+    width: 45%;
+}
+.right1{
+    width: 45%;
+    align-content: ;
+}
+.uper{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+.niche{
+    display: flex;
+    justify-content: left;
+}
+.aa ,.ab{
+    width: 50%;
+}
+.aa img{
+    width: 100%;
+}
+.ab img{
+    width: 80%;
+}
+.img2{
+    margin-top: 20%;
+
+}
+.img3{margin-left: 20%;}
+.aa .img4,.ab .img2{padding-left: 6%;}
+.right1 h2{
+    color: orangered;
+}
+.right1 h2 ::after{
+    content: "";
+    background-color: orangered;
+    width: 50px;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+    bottom: 33px;
+    left: 110px;
+}
+.right1 h1 svg{
+    width: 30px;
+}
+.right1 h1{font-size: 35px;
+    margin-bottom: 20px;
+}
+.right1 p{
+    color: rgb(78, 77, 77);
+}
+.experiance-chef{
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+}
+.experiance ,.chef{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    border-left: 5px solid orangered;
+}
+.experiance h1,.chef h1{
+    margin: 0 10px;
+}
+.right1 a{
+    padding: 15px 35px;
+    background-color: orangered;
+    color: white;
+}
+.forthpage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.forthpage h2{
+    color: orangered;
+    padding: 10px;
+}
+.forthpage h2::after{
+    content: "";
+    background-color: orangered;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    width: 40px;
+    height: 3px;
+}
+.forthpage h2::before{
+    content: "";
+    background-color: orangered;
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    width: 40px;
+    height: 3px;
+}
+.forthpage h1{
+    margin: 5px 0 30px 0;
+    width: auto;
+}
+.populeritems{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid rgba(180, 178, 178,0.6);
+    margin: 30px;
+}
+.populeritems button{
+    width: 110px;
+    border: none;
+    background-color: transparent;
+}
+.populeritems button:hover{
+    border-bottom: 2px solid orangered;
+}
+.populeritems svg{
+    width: 40px;
+    height: auto;
+    color: orange;
+}
+@media screen and (max-width:900px){
+    .navmenu{
+        display: none;
+    }
+    .icon h1{
+        margin-top: 0;
+    }
+    .menuicon{
+        display: block;
+    }
+    .menuicon button:hover .dropdowncontent1{
+        display: block;
+    }
+    .firstpage{
+        display: block;
+        height: auto;
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+        padding-top: px;
+
+    }
+    .left p,h1{
+        width: 80%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .pic1{
+        width: 100%;
+        padding: 6% 0;
+    }
+    .pic1 img{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .secondpage{
+        flex-direction: column;
+        height: auto;
+    }
+    .line1,.line2{
+        justify-content:center ;
+        margin: 20px;
+    }
+    .ss{
+        width: 30%;
+        height: auto;
+    }   
+    .thirdpage{
+       flex-direction: column;
+    }   
+    .left1,.right1{
+        width: 80%;
+    }
+    .right1 h2{
+    margin-top: 10%;
+    }
+    .right1 h1{
+    margin: 0 0 20px 0;
+    }
+    .experiance,.chef{
+    margin: 10px 0;
+    }
+    .experiance h1,.chef h1{
+        margin: 0 10px;
+        width: auto;
+    }
+    
+}
+@media screen and (max-width:570px){
+    .secondpage{
+        height: auto;
+    }
+   .line1,.line2{
+        flex-direction: column;
+   }
+   .ss{
+    width: 80%;
+   }
+   .experiance-chef{
+        flex-direction: column;
+   } 
+}
+.forth2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.left2,.right2{
+    width: 45%;
+}
+.left2 img,.right2 img{
+    width: 80px;
+    margin: 10px;
+}
+.set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.set hr{
+    margin: 10px 0;
+}
+@media screen and (max-width:900px) {
+    .forth2{
+        flex-direction: column;
+    }
+    .left2,.right2{
+        width: 100%;
+    }
+    .set{
+        width: 100%;
+        justify-content: center;
+    }
+    .text{
+        width: 60%;
+    }
+}
+.fifth{
+    width: 100%;
+    display: flex;
+}
+.left5,.right5{
+    width: 50%;
+}
+.left5{
+   position: relative;
+}
+.left5 svg{
+    position: absolute;
+    top: 44%;
+    left: 45%;
+    background-color: orangered;
+    border-radius: 50%;
+    width: 10%;
+    height: auto;
+}
+.left5 img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.right5{
+    padding: 3%;
+    background-color: rgb(20, 16, 39);
+}
+.right5 h4{
+    color: orangered;
+    margin-bottom: 1%;
+}
+.right5 h4::after{
+    content: "";
+    background-color: orangered;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    width: 40px;
+    height: 2px;
+}
+.right5 h1{
+    color: white;
+    margin-bottom: 3%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row input,select{
+    width: 46%;
+    height: 45px;
+    margin-bottom: 3%;
+}
+textarea{
+    width: 100%;
+    height:70px ;
+    margin-bottom: 2%;
+}
+.sub input{
+    width: 100%;
+    height: 60px;
+    background-color: orangered;
+}
+@media screen and (max-width:600px) {
+    .fifth{
+        flex-direction: column;
+    }
+    .left5{
+        width: 100%; 
+    }
+    .right5{
+        width: 90%;
+        padding: 5%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row input,select{
+        width: 100%;
+    }
+    .right5 h1{
+        margin: 2% 0;
+    }
+}
+.last{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0 20px 0;
+    background-color: rgb(11, 11, 39);
+    border-bottom: 1px solid rgba(255, 255, 255,0.1);
+}
+.last div{
+    min-width: 200px;
+    margin-left: 5%;
+}
+.last h3{
+    color: orangered;
+    margin: 10px 0;
+}
+.last h3::after{
+    content: "";
+    background-color: orangered;
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    position: relative;
+    top: -4px;
+}
+.last p{
+    font-size: 13px;
+    color: white;
+    line-height: 20px;
+}
+.signup{
+    position: relative;
+}
+.signup input{
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+}
+.signup button{
+    border: none;
+    background-color: orange;
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    right: 27px;
+    top: 20px;
+}
+.last2{
+    background-color: rgb(11, 11, 39);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 20px 0;
+}
+.last2 a{
+    color: white;
+    border-right: 1px solid rgba(255, 255, 255,0.2);
+    padding: 5px;
+}
+.last2 p{
+    font-size: 12px;
+    padding: 10px;
+}
+@media screen and (max-width:700px){
+    .last2{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:496px) {
+    .last {
+        display: block;
+    }
+    .signup button{
+        right: 12%;
+    }
+}
+
+
+

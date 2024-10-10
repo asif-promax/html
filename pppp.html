@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: blue;
+        }
+
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li{
+            color: white;
+            padding: 20px;
+        }
+
+        nav ul li::before{
+            content: "";
+            background-color: white;
+            width: 0%;
+            height: 2px;
+            display: block;
+            transition: 0.5s;
+            position: relative;
+            top: 20px;
+        }
+
+        nav ul li:hover::before{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px){
+            nav ul{
+                flex-direction: column;
+            }
+            nav ul li{
+                text-align: center;
+            }
+            nav ul li::before{
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+</body>
+</html>

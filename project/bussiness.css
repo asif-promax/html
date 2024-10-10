@@ -1,115 +1,196 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 nav{
     background-color: rgb(25, 6, 199);
     display: flex;
-    justify-content: left;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 10px 0px;
     color: white;
+    align-items: center;
+    width: 100%;
 }
 .navmenu{
     display: flex;
-    padding-left: 80px;
+    align-items: center;
+    
 }
-.navmenu h5{
-    padding: 10px 20px;
+
+.navmenu a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
 .bussiness{
     display: flex;
+    align-items: center;
     gap: 5px;
-    margin-left: 20px;
+    font-size: 20px;
+    margin-left: 14px;
 }
 .bussiness svg{
-    width: 20px;
-    height: 20px;
-    padding-top: 3px;
-    color: #cac4ee;
+    width: 35px;
+    height: auto;
 }
 .firstpage{
     display: flex;
+    justify-content: center;
     background-color: rgb(25, 6, 199);
-    justify-content: left;
-    height: 551px;
+    width: 100%;
+    height: 540px;
+    align-items: center;
 }
 .left{
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 160px 20px 0px 50px;
-}
-.pitcher img{
-    margin: 100px 0px 0px 220px;
-    width: 450px;
-    height: 350px;
+    width: 45%;
 }
 .left h1{
-    text-transform: capitalize;
-    word-spacing: 10px;
+    color: white;
 }
 .left p{
-    font-size: 12px;
-    padding: 30px 0px;
-    line-height: 15px;
-    color: rgb(255, 255, 255);
-    opacity: 0.5;
-    word-spacing: 5px;
-}
-.started{
-    background-color: white;
-    padding: 12px 5px;
-    border-radius: 3px;
-    color: rgb(25, 6, 199);
-    text-decoration: none;
-    font-weight:bold;
-    font-size: 12px;
-}
-.watch{
-    color: white;
-    text-decoration: none;
+    color: rgba(255, 255, 255,0.5);
     font-size: small;
+}
+.pitcher{
+    width: 45%;
+}
+.pitcher img{
+    width: 70%;
+    display: block;
+    margin: auto;
+    min-width: 300px;
 }
 .link{
     display: flex;
-    gap: 8px;
+    font-size: 12px;
     align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.started{
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 6px;
+    border-radius: 6px;
 }
 .svg svg{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: auto;
+    color: white;
+}
+.watch{
+    text-decoration: none;
+    color: white;
 }
 .secondpage{
     display: flex;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-
+    gap: 2%;
+    height: 400px;
 }
 .img{
-   width: 50%;
-}
-.right{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 45%;
+    width: 48%;
 }
 .img img{
-    width: 550px; 
-    height: 340px;
-    margin: 50px 80px;
+    width: 90%;
+    min-width: 200px;
+    min-height: 200px;
+    display: block;
+    margin: auto;
+
 }
-.right h4{
-    font-size: 13px;
+.right{
+    width: 45%;
 }
-span{
-    color: rgb(110, 13, 201);
+.right h2{
+    margin-bottom: 20px;
 }
 .button{
-    background-color: #cac4ee;
-    padding: 10px;
-    display: inline-block;
-    margin: 20px 10px;
-    border-radius: 4px;
+    background-color: rgb(216, 216, 216);
+    display: inline;
+    padding: 15px;
 }
-.button button{
-    border: #cac4ee;
-    padding: 5px 10px;
+button{
+    border: 0px;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: white;
+}
+.right p{
+    font-size: small;
+    letter-spacing: .1px;
+    padding: 15px 10px;
+}
+button:hover{
+    background-color: blue;
+}
+.navmenu a:hover,.started:hover,.watch:hover,.svg svg:hover{
+    color: rgb(167, 167, 167);
+}
+@media screen and (max-width:750px){
+    nav{
+        display: block;
+    }
+    .firstpage, .secondpage{
+        display: block;
+        height: auto;
+    }
+    .left, .right{
+        width: 100%;
+        text-align: center;
+    }
+    .link{
+        justify-content: center;
+    }
+    .pitcher{
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .pitcher img{
+        width: 45%;
+        margin-top: 4%;
+        min-width: 250px;
+    }
+    .img{
+        width: 100%;
+    }
+    .img img{
+        width: 60%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        min-width: 250px;
+    }
+}
+@media screen and (max-width: 450px){
+    .firstpage{
+        height: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .navmenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .left h1,p{
+        padding:0 5px 5px 5px;
+    }
+    .link{
+        flex-direction: column;
+    }
+    .pitcher img, .img img{
+        width: 80%;
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+    } 
 }

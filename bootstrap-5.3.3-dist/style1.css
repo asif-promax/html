@@ -1,0 +1,40 @@
+.first{
+    width: 100%;
+}
+.first1{
+    width: 50%;
+}
+.first2{
+    width: 50%;
+}
+.first2{
+    background-color: aqua;
+}
+.ip{
+    border: none;
+    border-bottom: 2px solid ;
+}
+.bb{
+    width: 80px;
+    font-size: 50%;
+    position: absolute;
+    right: 17%;
+    bottom: 43%;
+}
+@media screen and (max-width:790px) {
+    .three{
+        display: none;
+    }
+}
+@media screen and (max-width:576px) {
+    .two{
+        display: none;
+    }
+    .display img{
+        display: block;
+        margin: auto;
+    }
+    .last{
+        flex-direction: column;
+    }
+}

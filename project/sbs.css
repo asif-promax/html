@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+}
+.navlogo img{
+    padding: 20px 30px 5px 30px;
+}
+.navmenu a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0,0.7);
+}
+.navside{
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.navside svg{
+    width: 25px;
+    height: auto;
+    color: rgb(87, 86, 86);
+    padding: 0 0px;
+}
+.firstpage{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 30%;
+    margin-left: 40px;
+}
+.pic{
+    width: 60%;
+    overflow: hidden;
+}
+.pic img{
+    width: 80%;
+    margin-left: 30px;
+}
+.left h1{
+    font-size: 70px;
+    padding: 50px 0;
+}
+h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: 1s;
+}
+.navmenu a:hover{
+    background-color: rgb(199, 59, 35);
+    color: white;
+}
+h4:hover{
+    color: rgb(199, 59, 35);;
+}
+.skating{
+    position: relative;
+    animation-name: skating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes skating {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 100px;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.board{
+    position: relative;
+    animation-name: board;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes board {
+    0% {
+        left: 100px;
+    }
+    50% {
+        left: 0px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+.pic img{
+    position: relative;
+    animation-name: pic;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes pic {
+    0%{
+        transform: rotate(-25deg);
+        left: 0px;
+    }
+    50%{
+        transform: rotate(50deg);
+        left: 150px;
+    }
+    100%{
+        transform: rotate(-25deg);
+        left: 0px;
+    }
+}
+h4::after{
+    content: "";
+    background-color: rgb(206, 50, 50);
+    width: 0%;
+    height: 2px;
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+    bottom: 4px; 
+}
+h4:hover::after{
+    width: 50%;
+}
+.secondpage{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/images/about_bg.jpg);
+    background-attachment: fixed;
+}
+.left1{
+    width:20%;
+}
+.pitcher{
+    width: 60%;
+    
+
+}
+.pitcher img{
+    width: 80%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
