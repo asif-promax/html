@@ -256,60 +256,143 @@
 // while(i<10){
 //     const person = [];
 // }
-const person=[];
-function menu(){
-  var choice= parseInt(prompt(`1 : Add user \n 2: view task \n 3:sort task \n 4:search task \n 5:exit`),10);
-  return choice;
-}
-let choice;
-do{
-choice=menu();
-switch (choice) {
-    case 1:
-        addPerson();
-        console.log(person);
-        break;
-    case 2:
-        viewTask();
-        break;
-    case 3:
-        sortTask();
-        break;
-    case 4:
-        searchTask();
-        break;
-    case 5:
-        Exit;
-        break;
-    default:
-        console.log("default value");
-        break;
-}
-}while(choice!==5);
-function addPerson() {
-    person.push({
-        id:parseInt(prompt("enter id"),10),
-        Name: prompt("Enter your name"),
-        description: prompt("Enter feedback"),
-        duedate: prompt("Enter due date")
-    });
-}
-function viewTask(){
-    person.map((p, index) => {
-        console.log(`Task ${index + 1}: ID: ${p.id}, Name: ${p.Name}, Description: ${p.description}, Due Date: ${p.duedate}`);
-    });
-}
-function sortTask(){
-    person.sort((a, b) => a.id - b.id);
-    person.forEach(p => console.log(`ID: ${p.id}, Name: ${p.Name}, Description: ${p.description}, Due Date: ${p.duedate}`));
-}
-function searchTask(){
-    const searchid=parseInt(prompt("Enter id to search for"),10);
-    const found=person.find(p => p.id === searchid);
-    if(found){
-        console.log(found);
-    }
-}
+// const person=[];
+// function menu(){
+//   var choice= parseInt(prompt(`1 : Add user \n 2: view task \n 3:sort task \n 4:search task \n 5:exit`),10);
+//   return choice;
+// }
+// let choice;
+// do{
+// choice=menu();
+// switch (choice) {
+//     case 1:
+//         addPerson();
+//         console.log(person);
+//         break;
+//     case 2:
+//         viewTask();
+//         break;
+//     case 3:
+//         sortTask();
+//         break;
+//     case 4:
+//         searchTask();
+//         break;
+//     case 5:
+//         Exit;
+//         break;
+//     default:
+//         console.log("default value");
+//         break;
+// }
+// }while(choice!==5);
+// function addPerson() {
+//     person.push({
+//         id:parseInt(prompt("enter id"),10),
+//         Name: prompt("Enter your name"),
+//         description: prompt("Enter feedback"),
+//         duedate: prompt("Enter due date")
+//     });
+// }
+// function viewTask(){
+//     person.map((p, index) => {
+//         console.log(`Task ${index + 1}: ID: ${p.id}, Name: ${p.Name}, Description: ${p.description}, Due Date: ${p.duedate}`);
+//     });
+// }
+// function sortTask(){
+//     person.sort((a, b) => a.id - b.id);
+//     person.forEach(p => console.log(`ID: ${p.id}, Name: ${p.Name}, Description: ${p.description}, Due Date: ${p.duedate}`));
+// }
+// function searchTask(){
+//     const searchid=parseInt(prompt("Enter id to search for"),10);
+//     const found=person.find(p => p.id === searchid);
+//     if(found){
+//         console.log(found);
+//     }
+// }
 
 
+let products=[
+    {pid:100,pName:'apple',band:'5g',price:120000,display:'led'},
+    {pid:101,pName:'samsaung',band:'5g',price:45000,display:'led'},
+    {pid:102,pName:'blackberry',band:'4g',price:50000,display:'led'},
+    {pid:103,pName:'nokia',band:'3g',price:1200,display:'lcd'},
+    {pid:104,pName:'motorola',band:'4g',price:10000,display:'lcd'}
+]
+ console.log(products.map(p=>p.pName+" "+p.price)) ;
+// console.log(products.filter(p => p.display==="lcd"));
+// console.log(products.filter(products=> products.band==="5g")
+//                     .map(products=>products.pName));
+// const mouny=products.filter(products=>products.price>10000 && products.price<50000)
+//                     .map(products=>products.pName);
+// console.log(mouny);
+// const expensiveProduct = products.reduce((a,b) => {
+//     return a.price > b.price ? a : b;
+// });
+// console.log(`expensive: ${expensiveProduct.pName},${expensiveProduct.price}`);
+// const notexpensiveProduct = products.reduce((min, product) => {
+//     return product.price < min.price ? product : min;
+// });
+// console.log(`low cost: ${notexpensiveProduct.pName},${notexpensiveProduct.price}`);
+
+
+                    
+
+// covid_data = [
+//     [1,'Ernakulam',34000,2000,23000,20000,2000],
+//     [2,'Idukki',14000,3000,25000,30000,1000],
+//     [3,'Thrissur',24000,4000,33000,24000,2500],
+//     [4,'Pathanamthitta',20000,2000,45000,22000,1500],
+//     [5,'Kozhikode',44000,5000,12000,21000,500],
+//     [6,'Palakkad',12000,1000,20000,23000,3400],
+//     [7,'Kottayam',27000,1500,27000,14000,1000],
+//     [8,'Kollam',14000,2500,25000,18000,2700]
+// ]
+
+// const high=covid_data.reduce((a,b) =>{
+//     return a[2]>b[2]?a:b;
+// })
+// console.log(`${high[1]} ${high[2]}`);
+// const dose=covid_data.reduce((a,b) => {
+//     return a[5]>b[5]?a:b;
+// })
+// console.log(`${dose[1]} ${dose[5]}`);
+// // console.log(covid_data.map(p=>p[5]));
+// const low_d=covid_data.reduce((a,b)=>{
+//     return a[3]>b[3]?a:b;
+// })
+// console.log(`${low_d[1]} ${low_d[3]}`);
+// const srt=covid_data.sort((a,b)=>{
+//     return b[2]-a[2];
+// })
+// console.log(`${srt}`);
+
+// const a=srt.map(p=>p[2]);
+
+
+
+// const h=covid_data.filter(a=>{
+//     return a[2]>15000;
+// });
+// console.log(h);
+// const st=covid_data.sort((a,b)=>{
+//     return b[5]-a[5];
+// })
+// console.log(st);
+
+
+//  const demo =((a,b)=>{console.log(a+b)});
+//  demo(10,5)
+
+
+//  const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     id: 5566,
+//     fullName:function() {
+//         return `${this.firstName}  ${this.lastName}`;
+//     }
+//     }
+//   console.log(person.fullName());
+  
 
